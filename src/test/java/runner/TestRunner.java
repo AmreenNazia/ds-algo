@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(features="src/test/resources/Feature/Signin.feature",glue = {"StepDefinition", "AppHooks"},
 monochrome = true,
 plugin = {"pretty","io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
-	 	"html:target/htmlreport.html"}
+	 	"html:target/HtmlReport/htmlreport.html"}
 		 
 )
 public class TestRunner {
