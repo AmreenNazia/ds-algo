@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class) 
 @CucumberOptions(features="src/test/resources/Feature/Tree.feature",glue = {"StepDefinition", "AppHooks"},
 monochrome = true,
-plugin = {"pretty","html:target/HtmlReprot/htmlreport.html"}
+plugin = {"pretty","io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"}
 		 
 )
 public class TestRunner {
